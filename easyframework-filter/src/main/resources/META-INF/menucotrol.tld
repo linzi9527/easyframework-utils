@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+	version="2.1">
+
+	<description>menu control library</description>
+	<display-name>menu</display-name>
+	<tlib-version>1.1</tlib-version>
+	<short-name>menu</short-name>
+	<uri>http://menu.com/jsp/jctl/menucontrol</uri>
+
+	<tag>
+		<description>
+			通过自定义标签控制菜单显示
+    	</description>
+		<name>model</name>
+		<tag-class>org.easyframework.tag.ModelControlTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>path</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>parentId</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>cssClass</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<description>
+			通过自定义标签控制菜单显示
+    	</description>
+		<name>item</name>
+		<tag-class>org.easyframework.tag.MenuControlTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>path</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>parentId</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>cssClass</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>
